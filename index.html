@@ -1,72 +1,94 @@
-	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Coming Soon</title>
-<link href="tools/style.css" rel="stylesheet" type="text/css" media="screen" />
-<link href="tools/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
-<script type="text/javascript" src="tools/jquery.min.js"></script> 
-<link href='https://fonts.googleapis.com/css?family=Merriweather:700,400|Lato' rel='stylesheet' type='text/css'>
-<link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
-
-
-</head>
-<body>
-<div class="wrapper"><!--wrapper started-->
-	<div class="abovebanner"><!-- above banner started -->
-			<div class="header"><!-- header started-->
-				<h1 id="logo">gift<span>items</span>.co.uk</h1>
-				<p class="line1">Gift shopping has a new address</p>
-				<p class="line1">--Code Pipeline Test 2--</p>
-			</div><!-- header ended-->
-						
-			<div class="content"><!-- content started-->
-					<p>COMING SOON!</p>
-					
-					<div class="form"><!-- form started -->
-						<div class="mainform">
-							<div class="field"><input type="text" id="test" value="enter your email address"/></div>
-							<div class="submit"><input type="button" value="subscribe here" /></div>						
-						</div>
-					</div><!-- form ended -->
-			
-			</div><!-- content ended -->
-	</div><!-- above banner ended -->
-		
-		<div class="belowbanner">
-			<div class="email">
-				<h2>email us</h2>
-				<p><a href="#">info@gititems.co.uk</a></p>
-			</div>
-			<div class="social">
-				<h2>social</h2>
-					<a href="#" class="socicon-facebook"></a>
-					<a href="#" class="socicon-twitter"></a>
-					<a href="#" class="socicon-youtube"></a>
-					<a href="#" class="socicon-instagram"></a>
-			</div>			
-			<div class="call">
-				<h2>call us</h2>
-				<p>888-888-8888</p>
-			</div>			
-		</div>
-</div>
-	
-	
-		<script type="text/javascript">
-var placeholder = $("#test").val();
-
-$("#test").keydown(function() {
-    if (this.value == placeholder) {
-        this.value = '';
-    }
-}).blur(function() {
-    if (this.value == '') {
-        this.value = placeholder;
-    }
-});
-</script>
-
-</body>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GiftItems.co.uk | Store</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="styles.css" />
+        <script src="store.js" async></script>
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="main-nav nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                </ul>
+            </nav>
+            <h1 class="store-name store-name-large">GiftItems.co.uk</h1>
+        </header>
+        <section class="container content-section">
+            <h2 class="section-header">Items</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Item 1</span>
+                    <img class="shop-item-image" src="Images/Album 1.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">£12.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Item 2</span>
+                    <img class="shop-item-image" src="Images/Album 2.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">£14.99</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Item 3</span>
+                    <img class="shop-item-image" src="Images/Album 3.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">£9.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Item 4</span>
+                    <img class="shop-item-image" src="Images/Album 4.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">£19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">£0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="store-footer-text">Email us at : info@giftitems.co.uk</h3>
+                <ul class="nav footer-nav">
+                    <li>
+                        <a href="https://www.youtube.com" target="_blank">
+                            <img src="Images/YouTube Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.spotify.com" target="_blank">
+                            <img src="Images/Spotify Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="Images/Facebook Logo.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
 </html>
